@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="heading">💸<span style="text-decoration: underline;">Currency Converter</span>💸</h1>
+        <div class="box">
+            <h1>Choose a quantity: </h1>
+            <input type="number" name="quantity" min="1">
+        </div>
+        <div class="box">
+            <h1>Choose a currency: </h1>
+            <select name="currency">
+                <option value="INR">₹ Indian Rupee</option>
+                <option value="USD">$ US Dollar</option>
+                <option value="EUR">€ Euro</option>
+                <option value="EUR">$ Australian Dollar</option>
+                <option value="EUR">¥ Japan Yen</option>
+            </select>
+        </div>
+        <div class="box" style="justify-content: center; margin-bottom: 30px;">
+            <input type="submit" class="btn" style="background-color: rgb(49, 213, 49); cursor: pointer;">
+        </div>
+
+        <div class="output">
+            <h2 style="text-align: center; margin-bottom: 20px;">Here is your converted value in different currencies</h2>
+            <table>
+                <thead>
+                    <th>Currency</th>
+                    <th>Code</th>
+                    <th>Value</th>
+                </thead>
+
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-bottom: 10px;">
+        Copyright  &copy; All rights reserved.
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
